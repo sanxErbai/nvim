@@ -1,0 +1,8 @@
+{
+  "git.addGBlameToVirtualText": true,
+  "snippets.extends": {
+    "typescript": ["javascript"],
+    "vue": ["typescript"]
+  },
+  "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips"
+}
