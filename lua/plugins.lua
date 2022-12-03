@@ -34,7 +34,7 @@ return require('packer').startup(function(use)
   }
 
   use 'tanvirtin/monokai.nvim'
-  -- use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
+  -- use 'ellisonleao/gruvbox.nvim'
 
   use {
     'nvim-lualine/lualine.nvim',

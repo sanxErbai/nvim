@@ -9,6 +9,7 @@ lua require('keybindings')
 lua require('plugins')
 
 lua require('packages/monokai')
+" lua require('packages/gruvbox')
 lua require('packages/bufferline')
 lua require('packages/comment')
 lua require('packages/indent-blankline')
