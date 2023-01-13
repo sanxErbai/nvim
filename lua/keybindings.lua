@@ -22,8 +22,9 @@ map("v", "J", ":move '>+1<CR>gv-gv", opt)
 map("v", "K", ":move '<-2<CR>gv-gv", opt)
 
 -- 行首行尾
-map("n", ";", "^", opt)
-map("n", "'", "$", opt)
+map("n", ".", "$", opt)
+map("n", ";", "%", opt)
+map("n", ",", "^", opt)
 
 -- 删除不存粘贴板
 map("n", "x", "\"_x", opt)
