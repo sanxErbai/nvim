@@ -63,6 +63,8 @@ return require('packer').startup(function(use)
 
   use 'lukas-reineke/indent-blankline.nvim'
 
+  use 'christoomey/vim-tmux-navigator'
+
   if packer_bootstrap then
     require('packer').sync()
   end
