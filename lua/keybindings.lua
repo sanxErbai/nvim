@@ -1,6 +1,7 @@
 -- leader key 为空
-vim.g.mapleader = "`"
-vim.g.maplocalleader = "`"
+vim.keymap.set("n", " ", "<Nop>", { silent = true, remap = false })
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 local opt = {
   noremap = true,
@@ -82,6 +83,18 @@ map("n", "<C-w>", ":bp <BAR> bd! #<CR>", opt)
 -- 关闭左/右侧标签页
 map("n", "<leader>br", ":BufferLineCloseRight<CR>", opt)
 map("n", "<leader>bl", ":BufferLineCloseLeft<CR>", opt)
+-- 快捷切换
+map("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>", opt)
+map("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>", opt)
+map("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>", opt)
+map("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>", opt)
+map("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>", opt)
+map("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", opt)
+map("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", opt)
+map("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>", opt)
+map("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", opt)
+map("n", "<leader>$", ":BufferLineGoToBuffer -1<CR>", opt)
+
 -- 关闭其他标签页
 map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
 
