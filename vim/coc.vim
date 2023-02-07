@@ -147,10 +147,11 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-nmap <expr> <silent> <C-d> <SID>select_current_word()
-function! s:select_current_word()
-  if !get(b:, 'coc_cursors_activated', 0)
-    return "\<Plug>(coc-cursors-word)"
-  endif
-  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
-endfunc
+" https://github.com/neoclide/coc.nvim/wiki/Multiple-cursors-support
+" nmap <expr> <silent> <C-d> <SID>select_current_word()
+" function! s:select_current_word()
+"   if !get(b:, 'coc_cursors_activated', 0)
+"     return "\<Plug>(coc-cursors-word)"
+"   endif
+"   return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+" endfunc
