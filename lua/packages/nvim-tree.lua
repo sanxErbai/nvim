@@ -25,7 +25,10 @@ nvim_tree.setup({
     -- dotfiles = true,
     -- 隐藏 node_modules 文件夹
     custom = { ".git" },
-    exclude = { ".gitignore" },
+    exclude = {
+      ".gitignore",
+      ".gitlab",
+    },
   },
   view = {
     -- 宽度

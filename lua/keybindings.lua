@@ -99,8 +99,8 @@ map("n", "<leader>$", ":BufferLineGoToBuffer -1<CR>", opt)
 map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
 
 -- 注释
-map("n", "<C-/>", "gcc", { noremap = false })
-map("v", "<C-/>", "gcc", { noremap = false })
+map("n", "<leader>/", "gcc", { noremap = false })
+map("v", "<leader>/", "gcc", { noremap = false })
 
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
